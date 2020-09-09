@@ -1,0 +1,154 @@
+html,
+body {
+  margin: 0;
+}
+
+#App {
+  font-family: sans-serif;
+
+  /* Give app full page to work with */
+  height: 100%;
+  /* background-color: blue; */
+}
+
+#page-wrap {
+  text-align: center;
+
+  /* Prevent sidebar from showing a scrollbar on page */
+  overflow: auto;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+
+
+  /* Sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 35px;
+  border-width: 3px;
+  color:#464d4f;
+  transition: color 0.2s;
+}
+.menu-item {
+  padding-left: 1.5em;
+}
+/* Change color on hover */
+.bm-item:hover {
+  color: grey;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position:fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 20px;
+  /* z-index: 5; */
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: grey;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  left: 200px
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: whitesmoke;
+  padding: 0 0 0;
+  font-size: 1.15em;
+  width: 230px
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+/* .logo {
+  background-color: grey;
+  color: white;
+  text-align: center;
+} */
+.navbar-text {
+  text-align: center;
+  /* padding-left: 500px; */
+  left: 17%;
+}
+
+.navbar-text h1 {
+  font-family: Verdana;
+  font-weight: bold;
+  letter-spacing: 4px;
+  font-size: 10px; 
+}
+
+.navbar-text h6 {
+  font-family: Verdana;
+  letter-spacing: 8px;
+  font-size: 12px;
+}
+
+.dropdown-menu-right {
+  /* background: #373a47 */
+  background-color: whitesmoke;
+}
+
+.drop{
+  padding-bottom: 50px;
+}
+
+.navigation{
+  width: 100%;
+  top:0;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  height:auto;
+  /* display: grid; */
+  /* grid-template-columns: 20% 60% 20%; */
+}
+.profile__img {
+	width: 50px;
+	height: 50px;
+  border-radius: 50%;
+  z-index: 1;
+  /* margin-right: 5px; */
+  }
+  .avatar_dropdown {
+	position: absolute;
+	top: 25px;
+  right: 65px;
+  }
+  .dropdown-menu {
+	  background: white;
+  }
+  .dropdown-toggle {
+    background-color: white;
+    color: #464d4f;
+    z-index: -1;
+    border: none
+  }
+
+  .list-icons {
+    margin-right: 15px
+  }
+
+  .badge {
+    margin-left: 40px;
+    background-color: #dfe9ed;
+  }

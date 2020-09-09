@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
-}
+/* *******MAIN.JS*********** */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    height: 100vh
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .grid-item {
+    /* background-color: grey; */
+    display: flex;
+    /* box-shadow: 5px 5px 5px whitesmoke; */
   }
-  to {
-    transform: rotate(360deg);
+  .grid-item.first {
+  grid-column: span 2 ;
+  height: 100%;
+  background-color: #dfe9ed;
   }
+  .grid-item.second {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 10px
+    }
+  .grid-item.third {
+      grid-row: span 2;
+      height: 100%;
+      background-color: white
+  }
+  .grid-item.fourth {
+    height: 100%;
+    background-color: white;
+    }
+
+  /* **********SUMMARY COMPONENT*************/
+
+  .heading {
+    background-color: white;
+    font-weight: bold;
+    width: 1146px;
+    padding: 10px 0 10px 0;
+    text-align: center
+  }
+
+  .summary-grid {
+      /* background-color: skyblue; */
+      margin: 18px;
+      padding: 15px;
+      width: 250px;
+      height: 145px;
+      color: white
+  }
+  .summary-grid.one {
+    background-color: #b31212;
+  }
+  .summary-grid.two {
+    background-color: skyblue;
+  }
+  .summary-grid.three {
+    background-color: orange;
+  }
+  .summary-grid.four {
+    background-color: green;
+  }
+
+  .hr {
+    height: 2px;
+	  margin: 5px 0 5px 0;
+	  background:rgba(255,255,255,.2);
+  }
+
+  /* **************ACTIVE MEMBERS COMPONENT************* */
+.memberprofilepic {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 10px
 }
+
+  /* ************TIMELINE COMPONENT*********  */
+
+  .list-group {
+    width: 100%;
+  }
+
+  .label {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 5px;
+    height: 25px;
+    width: 100px;
+    font-size: 12px;
+    text-align: center;
+    color: white
+    }
+  .label.income {
+    background-color: #b31212;
+  }
+  .label.downloads {
+    background-color: skyblue;
+  }
+  .label.views {
+    background-color: orange;
+  }
